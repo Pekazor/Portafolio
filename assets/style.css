@@ -1,0 +1,256 @@
+
+#news-slider {
+  margin-top: 80px;
+}
+.post-slide {
+  background: #fff;
+  margin: 20px 15px 20px;
+  border-radius: 15px;
+  padding-top: 1px;
+  box-shadow: 0px 14px 22px -9px #bbcbd8;
+}
+.post-slide .post-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: -12px 15px 8px 15px;
+  margin-left: -10px;
+}
+.post-slide .post-img img {
+  width: 100%;
+  height: auto;
+  transform: scale(1, 1);
+  transition: transform 0.2s linear;
+}
+.post-slide:hover .post-img img {
+  transform: scale(1.1, 1.1);
+}
+.post-slide .over-layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background: linear-gradient(
+    -45deg,
+    rgba(6, 190, 244, 0.75) 0%,
+    rgba(45, 112, 253, 0.6) 100%
+  );
+  transition: all 0.5s linear;
+}
+.post-slide:hover .over-layer {
+  opacity: 1;
+  text-decoration: none;
+}
+.post-slide .over-layer i {
+  position: relative;
+  top: 45%;
+  text-align: center;
+  display: block;
+  color: #fff;
+  font-size: 25px;
+}
+.post-slide .post-content {
+  background: #fff;
+  padding: 2px 20px 40px;
+  border-radius: 15px;
+}
+.post-slide .post-title a {
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+  display: inline-block;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+}
+.post-slide .post-title a:hover {
+  text-decoration: none;
+  color: #3498db;
+}
+.post-slide .post-description {
+  line-height: 24px;
+  color: #808080;
+  margin-bottom: 25px;
+}
+.post-slide .post-date {
+  color: #a9a9a9;
+  font-size: 14px;
+}
+.post-slide .post-date i {
+  font-size: 20px;
+  margin-right: 8px;
+  color: #cfdace;
+}
+.post-slide .read-more {
+  padding: 7px 20px;
+  float: right;
+  font-size: 12px;
+  background: #2196f3;
+  color: #ffffff;
+  box-shadow: 0px 10px 20px -10px #1376c5;
+  border-radius: 25px;
+  text-transform: uppercase;
+}
+.post-slide .read-more:hover {
+  background: #3498db;
+  text-decoration: none;
+  color: #fff;
+}
+.owl-controls .owl-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+.owl-controls .owl-buttons .owl-prev {
+  background: #fff;
+  position: absolute;
+  top: -13%;
+  left: 15px;
+  padding: 0 18px 0 15px;
+  border-radius: 50px;
+  box-shadow: 3px 14px 25px -10px #92b4d0;
+  transition: background 0.5s ease 0s;
+}
+.owl-controls .owl-buttons .owl-next {
+  background: #fff;
+  position: absolute;
+  top: -13%;
+  right: 15px;
+  padding: 0 15px 0 18px;
+  border-radius: 50px;
+  box-shadow: -3px 14px 25px -10px #92b4d0;
+  transition: background 0.5s ease 0s;
+}
+.owl-controls .owl-buttons .owl-prev:after,
+.owl-controls .owl-buttons .owl-next:after {
+  content: "\f104";
+  font-family: FontAwesome;
+  color: #333;
+  font-size: 30px;
+}
+.owl-controls .owl-buttons .owl-next:after {
+  content: "\f105";
+}
+@media only screen and (max-width: 1280px) {
+  .post-slide .post-content {
+    padding: 0px 15px 25px 15px;
+  }
+}
+
+
+/* Variables de color para la Seccion de encabezado*/
+body {
+    background-image: url("https://taktic.es/wp-content/uploads/2024/04/tendencias-tecnologicas-2020.jpg");
+    background-size: cover; /* Ajusta la imagen al tamaño del viewport */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen horizontalmente */
+    /* Opcional: ajusta el tono del fondo */
+    /* filter: brightness(0.8);  */
+  }
+
+  .col-md-4 {
+    /* Reduce el ancho de la columna para mostrar más tarjetas por fila */
+    width: 25%; /* Opcional: ajusta el ancho según el número de tarjetas por fila */
+  }
+
+
+/* Variables de color para Seccion de Proyectos*/
+:root {
+    --primary-color: #4f081a;/* Vinotinto */
+    --secondary-color: #f0f0f0; /* Gris claro */
+    --accent-color: #222; /* Gris oscuro para títulos */
+  }
+  
+  .project {
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    border-radius: 5%;
+  }
+  
+  .project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project:hover img {
+    transform: scale(1.1);
+  }
+  
+  .project .card-body {
+    background-color: var(--secondary-color);
+    padding: 2rem;
+  }
+  
+  .project .card-title {
+    color: var(--accent-color);
+    font-weight: bold;
+  }
+  
+  .project .card-text {
+    color: var(--accent-color);
+  }
+  
+  .project .btn {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+
+  /* .menu{
+    position: relative !important;
+    width: 280px !important;
+    height: 280px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  } */
+
+  /* .menu .toggle{ 
+    position: relative !important;
+    height: 60px !important;
+    width: 60px !important;
+    background: #fff !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: #333 !important;
+    font-size: 2rem !important;
+    cursor: pointer !important;
+    transition:1.25s !important;
+    z-index: 5 !important;
+  }
+
+  .menu.active .toggle {
+    transform: rotate(360deg) !important;
+    box-shadow: 0 0 0 2px #333 !important;
+  } */
+
+
+  /* carousel */
+/* .carousel {
+    overflow: hidden;
+    width: 100%;
+} */
+
+/* .slide {
+    float: left;
+    width: 100%;
+ } */
+    /* Agrega estilos adicionales para cada diapositiva */
+
+
+/* Estilos para los botones */
+/* .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    color: #333;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  } */
