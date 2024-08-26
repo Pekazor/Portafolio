@@ -1,4 +1,5 @@
-
+ 
+    /* OWL CAROUSEL - DISEÑO */
 #news-slider {
   margin-top: 80px;
 }
@@ -138,7 +139,7 @@
 }
 
 
-/* Variables de color para la Seccion de encabezado*/
+/* DISEÑO DE CUERPO - BODY*/
 body {
     background-image: url("https://taktic.es/wp-content/uploads/2024/04/tendencias-tecnologicas-2020.jpg");
     background-size: cover; /* Ajusta la imagen al tamaño del viewport */
@@ -149,12 +150,12 @@ body {
   }
 
   .col-md-4 {
-    /* Reduce el ancho de la columna para mostrar más tarjetas por fila */
-    width: 25%; /* Opcional: ajusta el ancho según el número de tarjetas por fila */
+    width: 25%; 
   }
 
 
-/* Variables de color para Seccion de Proyectos*/
+/* PROYECTOS - CARD*/
+
 :root {
     --primary-color: #4f081a;/* Vinotinto */
     --secondary-color: #f0f0f0; /* Gris claro */
@@ -199,58 +200,93 @@ body {
     color: var(--secondary-color);
   }
 
-  /* .menu{
-    position: relative !important;
-    width: 280px !important;
-    height: 280px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-  } */
+  /* PIE DE PAGINA - MENU - DISEÑOS */  
 
-  /* .menu .toggle{ 
-    position: relative !important;
-    height: 60px !important;
-    width: 60px !important;
-    background: #fff !important;
-    border-radius: 50% !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    color: #333 !important;
-    font-size: 2rem !important;
-    cursor: pointer !important;
-    transition:1.25s !important;
-    z-index: 5 !important;
+    footer{
+      background-color: rgb(235, 235, 131) !important;
+      padding: 20px;
+    }
+
+  .footer {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+    background: #262433;
   }
 
-  .menu.active .toggle {
-    transform: rotate(360deg) !important;
-    box-shadow: 0 0 0 2px #333 !important;
-  } */
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
 
-
-  /* carousel */
-/* .carousel {
-    overflow: hidden;
-    width: 100%;
-} */
-
-/* .slide {
-    float: left;
-    width: 100%;
- } */
-    /* Agrega estilos adicionales para cada diapositiva */
-
-
-/* Estilos para los botones */
-/* .prev, .next {
-    position: absolute;
-    top: 50%;
+  .menu{
+    position:absolute;
+    width:280px;
+    height:280px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    right: 20px; /* Nueva modificacion*/
+    top: 380%;
     transform: translateY(-50%);
-    background: #fff;
-    color: #333;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-  } */
+  }
+
+  
+  .menu .toggle{
+    position:relative;
+    height:60px;
+    width:60px;
+    background:#fff;
+    border-radius:50%;
+    box-shadow:0 3px 4px rgba(0,0,0,0.15);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#333;
+    font-size:2rem;
+    cursor:pointer;
+    transition:1.25s;
+    z-index:5;
+  }
+  .menu.active .toggle{
+    transform:rotate(360deg);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15),
+      0 0 0 2px #333,
+      0 0 0 8px #fff;
+  }
+  .menu li{
+    position:absolute;
+    left:0;
+    list-style:none;
+    transition:0.5s;
+    transform:rotate(calc(360deg/8 * var(--i)));
+    transform-origin:140px;
+    scale:0;
+    transition-delay: calc(0.05s * var(--i));
+  }
+  .menu.active li{
+    scale:1;
+  }
+  .menu li a{
+    position:relative;
+    display:flex;
+   transform:rotate(calc(360deg/-8 * var(--i)));
+    width:60px;
+    height:60px;
+    background-color:#FFF;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    font-size:1.75rem;
+    color:var(--clr);
+     box-shadow:0 3px 4px rgba(0,0,0,0.15);
+    transition:0.5s;
+  }
+  .menu li:hover a{
+    font-size:2.5rem;
+    box-shadow:0 0 0 2px var(--clr),
+      0 0 0 6px #fff;
+  }
