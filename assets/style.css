@@ -228,9 +228,9 @@ body {
     display:flex;
     align-items:center;
     justify-content:center;
-    right: 20px; /* Nueva modificacion*/
-    top: 380%;
-    transform: translateY(-50%);
+    /*right: 20px; /* Nueva modificacion*/
+    /* top: 380%;
+    transform: translateY(-50%); */
   }
 
   
