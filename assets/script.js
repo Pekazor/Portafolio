@@ -19,7 +19,7 @@ function crearTarjetaProyecto(proyect) {
   const projectSeccion = document.querySelector('#project')
 
 const arrayProject = [
-{name: "Demo Cajero Automatico", title: "Simulador de Cajero Automático en JavaScript", image: "assets/img/mosaico.png", description:"Explore nuestra implementación de un Cajero Automático virtual, desarrollado íntegramente en JavaScript. Este proyecto demuestra la capacidad de crear una aplicación interactiva y funcional utilizando únicamente las funciones prompt() y alert().", link: ""},
+{name: "Demo Cajero Automatico", title: "Simulador de Cajero Automático en JavaScript", image: "https://media.istockphoto.com/id/701002580/es/vector/cajero-en-banco-u-oficina-concepto-de-vector.jpg?s=612x612&w=0&k=20&c=iXEzqrikHoNSPAPJVPf2DmpF8KFTxe7noPqfXDK62hg=", description:"Explore nuestra implementación de un Cajero Automático virtual, desarrollado íntegramente en JavaScript. Este proyecto demuestra la capacidad de crear una aplicación interactiva y funcional utilizando únicamente las funciones prompt() y alert().", link: ""},
 {name: "Mascotas en Foco", title: "Galería Dinámica: Mascotas en Foco", image: "assets/img/MosaicoAnimal.png", description:"Descubra nuestra cautivadora galería de imágenes dedicada a perros y gatos, un proyecto que fusiona diseño responsivo con el encanto de nuestras mascotas favoritas.", link: ""},
 {name: "Cuadros Dinamicos", title: "Mosaico Responsivo: Cuadrados Dinámicos", image: "assets/img/mosaico.png", description:"Explore nuestro innovador diseño de mosaico digital, una demostración visual de diseño web moderno y adaptativo. Este proyecto exhibe una composición armoniosa de cuadrados de diversos tamaños y colores, creada exclusivamente con HTML y CSS.", link: ""},
 ]
