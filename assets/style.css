@@ -142,8 +142,8 @@
 /* DISEÑO DE CUERPO - BODY*/
 body {
     background-image: url("https://taktic.es/wp-content/uploads/2024/04/tendencias-tecnologicas-2020.jpg");
-    background-size: cover; /* Ajusta la imagen al tamaño del viewport */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: contain; /* Ajusta la imagen al tamaño del viewport */
+    background-repeat: round; /* Evita que la imagen se repita */
     background-position: center; /* Centra la imagen horizontalmente */
     /* Opcional: ajusta el tono del fondo */
     /* filter: brightness(0.8);  */
@@ -228,9 +228,9 @@ body {
     display:flex;
     align-items:center;
     justify-content:center;
-    /*right: 20px; /* Nueva modificacion*/
-    /* top: 380%;
-    transform: translateY(-50%); */
+    right: 20px; /* Nueva modificacion*/
+    top: 380%;
+    transform: translateY(-50%);
   }
 
   
