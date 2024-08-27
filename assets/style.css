@@ -156,6 +156,54 @@ body {
     width: 25%; 
   }
 
+  .texto-sombreado{
+    color: #7de5de;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo blanco con opacidad */
+    padding: 10px;
+    border: 2px solid #7de5de;
+    border-radius: 5%;
+  }
+
+.texto-title{
+  font-family: 'Great Vibes', cursive;
+  font-size: 80px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: #7de5de;
+}
+.texto-n{
+  color: #7de5de;
+  /* font-weight: bold; */
+  font-family: 'Great Vibes', cursive;
+  font-size: 30px;
+  
+}
+.texto-h2{
+  color: #7de5de;
+  font-weight: bold;
+  font-family: 'Great Vibes', cursive;
+  font-size: 40px;
+  
+}
+.texto-h2e{
+  color: #7de5de;
+  font-weight: bold;
+  font-family: 'Great Vibes', cursive;
+  font-size: 50px;
+  
+}
+.texto-skill{
+  color: #7de5de;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.texto-hr{
+  color: #7de5de;
+  border-top: turquoise solid;
+}
+
+
 
 /* PROYECTOS - CARD*/
 
@@ -168,7 +216,7 @@ body {
   .project {
     background-color: var(--primary-color);
     border-radius: 1rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    box-shadow: -3px 14px 25px -10px #92b4d0;
     overflow: hidden;
     border-radius: 5%;
   }
@@ -220,6 +268,10 @@ body {
       flex-direction: column; /* Apila los elementos verticalmente */
     }
   }
+
+  .btn-primary.noActive:visited {
+    background-color: #4f081a;
+}
 
   /* PIE DE PAGINA - MENU - DISEÑOS */  
 
@@ -306,7 +358,7 @@ body {
     border-radius:50%;
     font-size:1.75rem;
     color:var(--clr);
-     box-shadow:0 3px 4px rgba(0,0,0,0.15);
+    box-shadow:0 3px 4px rgba(0,0,0,0.15);
     transition:0.5s;
   }
   .menu li:hover a{

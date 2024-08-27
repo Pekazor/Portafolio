@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
+    <!-- fuente de letras -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">   
+
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- owl-carousel -->
@@ -12,18 +17,20 @@
     <!-- footer -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css"rel="stylesheet"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"rel="stylesheet"/>
+    
     <title>Esteban Basualdo - Portafolio</title>
 
 </head>
 <body>
     <header>
-        <h1 class="container bg-primary">Esteban Basualdo</h1>
+        <h1 class="texto-title">Esteban Basualdo</h1>
+        <hr class="texto-hr m-4">
         <nav>
             <ul>
-                <li><a href="#about">Sobre mí</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#project">Proyectos</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <li class="texto-n"><a class="texto-n" href="#about" >Sobre mí</a></li>
+                <li class="texto-n"><a class="texto-n" href="#skills">Habilidades</a></li>
+                <li class="texto-n"><a class="texto-n" href="#project">Proyectos</a></li>
+                <li class="texto-n"><a class="texto-n" href="#contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -35,16 +42,16 @@
             <img src="assets/img/pekazor2.png" alt="Tu foto" class="img-fluid rounded-circle">
         </div>
         <div class="col-md-6">
-            <h2>Sobre mí</h2>
-            <p>Desarrollador Web, cocinero de codigo y amante de la innovacion, el constante aprendizaje y de llevar abstractas ideas a plataformas digitales, atractivas y funcionales.</p>
+            <h2 class="texto-h2">Sobre mí</h2>
+            <p class="texto-sombreado">Desarrollador Web, cocinero de codigo y amante de la innovacion, el constante aprendizaje y de llevar abstractas ideas a plataformas digitales, atractivas y funcionales.</p>
         </div>
     </div>
 </section>
     
     <!-- HABILIDADES  -->
     <section id="skills">
-        <h2>Habilidades</h2>
-        <ul class="skills-list">
+        <h2 class="texto-h2 m-4">Habilidades</h2>
+        <ul class="skills-list texto-skill">
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
@@ -168,11 +175,11 @@
             </div>
           </div>
     </section>
-    <hr>
+    <hr class="texto-hr m-4">
 
     <!-- SECCION DE PROYECTO -->
-    <h2>Proyectos en Produccion</h2>
-    <section id="project" class="project-container">
+    <h2 class="texto-h2e m-4">Proyectos en producción</h2>
+    <section id="project" class="project-container m-4">
         <div class="project-card">
         </div>
         <div class="project-card">
@@ -182,10 +189,10 @@
 
     </section>
 
-    <section id="contact">
-        <h2>Contacto</h2>
+    <section id="contact" class="texto-verde">
+        <h2 class="texto-h2 m-4">Contacto</h2>
         <form>
-            <label for="name">Nombre:</label>
+            <label class="texto-sombreado m-4" for="name">Nombre:</label>
             <input type="text" id="name" name="name" required>
             <button type="submit">Enviar</button>
         </form>
