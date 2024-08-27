@@ -137,6 +137,9 @@
     padding: 0px 15px 25px 15px;
   }
 }
+.container{
+  overflow-x: hidden;
+}
 
 
 /* DISEÑO DE CUERPO - BODY*/
@@ -222,15 +225,18 @@ body {
   }
 
   .menu{
-    position:absolute;
+    position:fixed;
     width:280px;
     height:280px;
     display:flex;
     align-items:center;
     justify-content:center;
-    right: 20px; /* Nueva modificacion*/
-    top: 380%;
-    transform: translateY(-50%);
+    top: 61%;
+    z-index: 400;
+    right: 5%;
+    /*right: 20px; /* Nueva modificacion*/
+    /* top: 280%;
+    transform: translateY(-50%); */
   }
 
   
