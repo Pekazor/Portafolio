@@ -54,7 +54,7 @@ toggle.addEventListener("click",()=>{
   menu.classList.toggle("active");
 })
 
-// Formulario
+// Formulario - formulario
 
 const form = document.getElementById('contactForm');
 const nameInput = document.getElementById('name');
