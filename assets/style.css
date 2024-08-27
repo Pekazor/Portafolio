@@ -202,6 +202,49 @@ body {
   color: #7de5de;
   border-top: turquoise solid;
 }
+.texto-form{
+  color: #7de5de;
+}
+
+/* formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+  margin-left: 20px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+input, textarea {
+  flex: 1; 
+  padding: 10px;
+  border: 1px solid #7de5de;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #333;
+  color: #7de5de;
+}
+button {
+  background-color: #333; 
+  color: #7de5de; 
+  border: 2px solid #7de5de; 
+  border-radius: 5%; 
+  padding: 5px 10px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: grey; 
+}
 
 
 

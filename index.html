@@ -192,11 +192,34 @@
     <section id="contact" class="texto-verde">
         <h2 class="texto-h2 m-4">Contacto</h2>
         <form>
-            <label class="texto-sombreado m-4" for="name">Nombre:</label>
+            <label class="texto-form" for="name">Nombre:</label>
             <input type="text" id="name" name="name" required>
+            <span class="error" id="nameError"></span>
+
+            <label class="texto-form" for="surname">Apellido:</label>
+            <input type="text" id="surname" name="surname" required>
+            <span class="error" id="surnameError"></span>
+
+            <label class="texto-form" for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <span class="error" id="phoneError"></span>
+
+            <label class="texto-form" for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error" id="emailError"></span>   
+
+            <label class="texto-sombreado m-4" for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            <span class="error" id="messageError"></span>
+
             <button type="submit">Enviar</button>
+
         </form>
     </section>
+
+    
+
+
 
     <br>
 

@@ -54,3 +54,38 @@ toggle.addEventListener("click",()=>{
   menu.classList.toggle("active");
 })
 
+// Formulario
+
+const form = document.getElementById('contactForm');
+const nameInput = document.getElementById('name');
+const surnameInput = document.getElementById('surname');
+const phoneInput = document.getElementById('phone');
+const emailInput = document.getElementById('email');
+const messageInput = document.getElementById('message');
+const errorElements = document.querySelectorAll('.error');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  errorElements.forEach(error => {
+    error.classList.remove('active');
+  });
+
+  const name = nameInput.value.trim();
+  const surname = surnameInput.value.trim();
+  const phone = phoneInput.value.trim();
+  const email = emailInput.value.trim();
+  const message = messageInput.value.trim();
+
+  if (name === '') {
+    document.getElementById('nameError').textContent = 'Por favor, ingresa tu nombre.';
+    document.getElementById('nameError').classList.add('active');
+  }
+
+  if (surname === '') {
+    document.getElementById('surnameError').textContent = 'Por favor, ingresa tu apellido.';
+    document.getElementById('surnameError').classList.add('active');
+  }
+
+
+});
