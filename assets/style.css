@@ -203,6 +203,24 @@ body {
     color: var(--secondary-color);
   }
 
+  .project-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+  }
+  
+  /* .project-card { */
+    /*flex: 1; /* Cada tarjeta ocupará el espacio disponible */
+   /* margin: 10px; /* Añade un margen para separar las tarjetas */
+  
+  
+  /* Para pantallas pequeñas (ajusta el breakpoint según tus necesidades) */
+  @media (max-width: 768px) {
+    .project-container {
+      flex-direction: column; /* Apila los elementos verticalmente */
+    }
+  }
+
   /* PIE DE PAGINA - MENU - DISEÑOS */  
 
     footer{
